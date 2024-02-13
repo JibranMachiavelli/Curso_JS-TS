@@ -12,12 +12,25 @@
             padding: 0;
         }
 
-        #heading {
-            background: red;
+        body {
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/7784841b-4fc4-40bf-8a4a-82dfc995ea0d/BR-pt-20240205-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+            background-size: cover;
+            background-position: top center;
         }
 
-        #heading h1 {
-            padding: 15px;
+        #heading {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        #heading div {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        #heading .h1 {
+            padding: 15px 0px;
             font-size: 20px;
             text-transform: uppercase;
         }
@@ -32,9 +45,15 @@
 </head>
 <body>
     <header id="heading">
-        <h1>
+        <div>
+        <h1 class="h1">
             <a href="#">Netflix</a>
         </h1>
+
+        <h2 class="h1">
+            <a href="#">Entrar</a>
+        </h2>
+        </div>
     </header>
 </body>
 </html>
