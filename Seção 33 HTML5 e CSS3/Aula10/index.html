@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        tfoot td, table th {
+            background-color: #ddd;
+        }
+
+        tfoot td {
+            font-style: italic;
+        }
+        .resposive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <p>Lorem repellat?</p>
+    <div class="resposive-table">
+    <table>
+        <caption>Uma descrição para a tabela</caption>
+        <thead>
+            <tr>
+                <th>Título01</th>
+                <th>A</th>
+                <th>B</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Corpo01</td>
+                <td>Corpo02</td>
+                <td>Corpo03</td>
+            </tr>
+            <tr>
+                <td colspan="2">AQUI</td>
+                <td>Corpo02</td>
+            </tr>
+            <tr>
+                <td>Corpo01</td>
+                <td>Corpo02</td>
+                <td>Corpo03</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+            <td colspan="2" rowspan="2"></td>
+            <td rowspan="2">Total R$555</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+</body>
+</html>
