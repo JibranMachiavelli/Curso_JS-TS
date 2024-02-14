@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios e Inputs HTML</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        placeholde {
+            color: #ccc;
+        }
+        label {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <p>O meu Formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </p>
+
+        <p>
+            Genero: <br>
+            <label for="feminino">feminino</label>
+            <input type="radio" id="dev" name="Genero" value="feminino">
+            <br>
+            <label for="masculino">masculino</label>
+            <input type="radio" id="dev" name="Genero" value="masculino">
+            <br>
+            <label for="Out">Outro/Outra</label>
+            <input type="radio" id="dev" name="Genero" value="Out" checked>
+        </p>
+
+        <p>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="2024-01-04">
+        </p>
+        <p>
+            <label for="datetime">DateTime:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="2024-01-04T20:00">
+        </p>
+        <p>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" value="20:00:01">
+        </p>
+
+        <p>
+            <label for="cor">Cor preferida:</label>
+            <input type="color" id="cor" name="cor" value="#ffffff">
+        </p>
+
+        <p>
+            <label for="mail">Seu E-mail:</label>
+            <input type="email" id="mail" name="mail" placeholder="ex: email@email.com">
+        </p>
+
+        <p>
+            <label for="arquivo">Sua foto</label>
+            <input type="file" id="arquivo" name="arquivo" accept=".png,.svg,image/*" multiple>
+        </p>
+
+        <p>
+            <label for="number">Number:</label>
+            <input type="number" id="number" name="number" placeholder="Digite um numero" min="10" max="50" step="5">
+        </p>
+
+        <p>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha">
+        </p>
+
+        <p>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" step="10" list="tickmarks">
+
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="url">Sua url:</label>
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+
+        <p>
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="search" placeholder="...">
+        </p>
+
+        <p>
+            <label for="select">Select</label>
+            <select name="select" id="select" multiple>
+                <optgroup label="Teste">
+                <option value="Qualquer1" label="Label1">
+                <option value="Qualquer2" label="Label2" disabled>
+                <option value="Qualquer3" label="Label3" selected>
+                <option value="Qualquer4" label="Label4">
+                </optgroup>
+                <optgroup label="Teste">
+                <option value="Qualquer1" label="Label1">
+                <option value="Qualquer2" label="Label2" disabled>
+                <option value="Qualquer3" label="Label3" selected>
+                <option value="Qualquer4" label="Label4">
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="textarea">TextArea:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </p>
+
+    </form>
+</body>
+</html>
