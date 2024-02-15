@@ -16,6 +16,27 @@ body div section h1 {
     color: red;
 }
 
-.main-content {
-    background-color: blue;
+div.main-content h2.heading {
+    font-style: italic;
+    color: blue;
 }
+
+div {
+    color: initial;
+    margin-left: 20px;
+}
+
+.Pai > .filha > .filha {
+    color: blue;
+}
+
+.Pai > .filha {
+    color: red;
+}
+
+.Pai {
+    color: green;
+}
+
+
+
