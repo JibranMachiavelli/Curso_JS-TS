@@ -23,7 +23,23 @@
     background-color: red;
 }
 
-[meu-atributo=valor] {
+[meu-atributo~="valor1"] {
+    color: red;
+}
+
+[meu-atributo|="valor"] {
+    color: red;
+}
+
+[meu-atributo^="valor"] {
+    color: red;
+}
+
+[meu-atributo$="valor"] {
+    color: red;
+}
+
+[meu-atributo*="valor"] {
     color: red;
 }
 
