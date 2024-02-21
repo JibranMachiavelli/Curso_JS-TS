@@ -1,0 +1,106 @@
+.heading {
+    transition: all 600ms ease-in-out;
+}
+
+.heading:hover {
+    background-color: red;
+}
+/**/
+a {
+    color: red;
+}
+
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: firebrick;
+}
+
+a:hover {
+    transition: all 500ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: darkslategray;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+
+input:disabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+input:enabled {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+
+input:checked + p {
+    background-color: red;
+}
+input:not(:checked) + p {
+    background-color: yellow;
+}
+
+.pai .lista li:last-child {
+    background-color: red;
+}
+
+input:required {
+    background-color: blue;
+}
+
+p:not(.meio) {
+    color: blue;
+}
+
+ul li:nth-child(odd) {
+    background-color: darkcyan;
+}
+ul li:nth-child(even) {
+    background-color: purple;
+}
+ul li:nth-child(3n+6) {
+    background-color: red;
+}
+
+
+ul li::after {
+    content: ' - ';
+    background-color: blue;
+    color: red;
+    display: block;
+}
+
+p::first-letter {
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line {
+    background-color: red;
+}
+
+p::selection {
+    background-color: yellow;
+}
+
+::placeholder {
+    font-size: 50px;
+    color: red;
+}
