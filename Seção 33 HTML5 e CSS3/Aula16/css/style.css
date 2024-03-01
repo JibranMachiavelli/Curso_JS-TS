@@ -33,4 +33,5 @@ p {
     background-color: red; /*ABCDEF123456789*/
     background-color: rgba(255, 0, 0, 0.4);
     color: #FFF;
+    background-color: hsla(hue, saturation, lightness, alpha);
 }

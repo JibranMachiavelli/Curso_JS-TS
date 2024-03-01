@@ -1,0 +1,37 @@
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+ /* font-size: 50px;  medida absoluta px */
+
+.pai {
+   width: 50rem;
+   /*width: 50vw;*/
+   height: 100vh;
+   height: 30rem;
+   background: yellow;
+}
+
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background-color: blue;
+ } 
+
+p {
+    font-size: 2vmax; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.color-one {
+    background-color: cadetblue;
+}
+
+.color-two {
+    background-color: pink;
+}
